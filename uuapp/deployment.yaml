@@ -24,6 +24,9 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+        env:
+        - name: DEMO
+          value: "2"
         envFrom:
         - configMapRef:
             name: uuapp-configmap
